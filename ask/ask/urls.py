@@ -1,7 +1,4 @@
-from django.conf.urls import patterns, include, url
-
-from django.contrib import admin
-admin.autodiscover()
+from qa.views import test
 
 urlpatterns = patterns('qa.views',
     url(r'^$', 'qa.views.test'),

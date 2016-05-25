@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = '(jy0k-gunnhpa0wgi**71q2yrbkurkwz7s^*7+&41t!t&5y2e#'
+SECRET_KEY = '(jy0k-gunnhpa0wgi**71q2yrbkurkwz7s^*7+&41t!t&5y2e#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -30,25 +30,26 @@ DEBUG = True
 
 # Application definition
 
-#INSTALLED_APPS = [
+INSTALLED_APPS = [
 #    'django.contrib.admin',
 #    'django.contrib.auth',
 #    'django.contrib.contenttypes',
 #    'django.contrib.sessions',
 #    'django.contrib.messages',
 #    'django.contrib.staticfiles',
-#]
+    'qa',
+]
 
-#MIDDLEWARE_CLASSES = [
+MIDDLEWARE_CLASSES = [
 #    'django.middleware.security.SecurityMiddleware',
-#    'django.contrib.sessions.middleware.SessionMiddleware',
-#    'django.middleware.common.CommonMiddleware',
-#    'django.middleware.csrf.CsrfViewMiddleware',
-#    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
 #    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
-#    'django.contrib.messages.middleware.MessageMiddleware',
-#    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-#]
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
 
 ROOT_URLCONF = 'ask.urls'
 
